@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 시계</title>
+    
+</head>
+<body>
+    <h3>div 태그에 시계 만들기</h3>
+    <hr>
+    <div id="clock" onclick="toggleClock()"></div>
+
+    <script>
+        let timerId; 
+        let isRunning = true; 
+
+        function updateClock() {
+           
+            let current = new Date();
+            let timeString = current.toLocaleTimeString();
+
+            // div에 시간 표시
+            document.getElementById("clock").textContent = timeString;
+        }
+
+        function toggleClock() {
+            if (isRunning) {
+               
+                clearInterval(timerId);
+            } else {
+                
+                updateClock();
+                timerId = setInterval(updateClock, 1000);
+            }
+            isRunning = !isRunning; 
+        }
+
+       
+        updateClock();
+        timerId = setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
+

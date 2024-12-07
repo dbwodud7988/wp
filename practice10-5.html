@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 시계</title>
+</head>
+<body>
+    <h3>div 태그에 시계 만들기</h3>
+    <hr>
+    <div id="clock"></div>
+
+    <script>
+        let timerId;
+
+        function updateClock() {
+           
+            let current = new Date();
+            let timeString = current.toLocaleTimeString();
+
+           
+            document.getElementById("clock").textContent = timeString;
+
+            timerId = setTimeout(updateClock, 1000);
+        }
+
+        // 시계 시작
+        updateClock();
+
+        
+    </script>
+</body>
+</html>

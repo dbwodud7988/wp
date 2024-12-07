@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+    function calculate(event){
+
+
+        let exp = document.getElementById("exp");
+        let result = document.getElementById("result");
+        if(event.key === "Enter"){ 
+        try{
+        result.value = eval(exp.value);
+        }
+
+        catch(error)
+        {
+        result.value = "잘못된 수식입니다."
+        }
+
+    }
+}  
+</script>   
+</head>
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    수식을 입력하고 &lt;Enter&gt;를 입력하세요.
+
+    <br><br>
+    <form>
+    식 <input type="text" id="exp" value="" onkeydown="calculate(event)"><br>
+    값 <input type="text" id="result">
+
+
+    </form>
+    
+</body>
+</html>
