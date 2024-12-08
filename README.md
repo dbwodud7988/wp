@@ -1,0 +1,15 @@
+WEEK 1: 간단한 html 문서작성(ul, li) 
+WEEK 4: 직접 객체 만들기, 리터럴 표기법, 프로토타입으로 객체 만들기
+
+Practice8-1: 자바스크립트 (OnClick)
+Practice8-10: 자바스크립트
+
+Practice9-6: 라디오 버튼을 선택하면 이미지를 출력
+Practice9-10: 수식과 Enter키를 입력 받으면 값을 출력
+
+Practice10-5,6: SetTImeOut(),SetInterval(),ClearInterval()을 사용하여 시계 구현
+
+Practice12-2-save,search: 동일한 웹 브라우저에서 세션스토리지에 구입 항목을 저장하고 다른 창에서 검색
+Practice12-4-save,view: 일기를 작성하고 저장하는 페이지와 저장한 페이지를 view파일에서 확인. 
+
+Practice13-6: 워커태스크를 만들어 곱셈식을 처리하게함
